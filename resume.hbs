@@ -33,12 +33,16 @@
       <span class='divider'>|</span>
       <span class='phone'>{{phone}}</span>
       {{/if}}
+      {{#if website}}
+      <span class='divider'>|</span>
+      <a href='{{website}}'>{{website}}</a>
+      {{/if}}
       {{#location}}
         <span class='divider'>|</span>
         <span class='address'>
           {{#if city}}{{city}}{{/if}}{{#if region}}, {{region}}{{/if}}{{#if countryCode}}, {{countryCode}}{{/if}}
         </span>
-      {{/location}}
+      {{/location}}       
     </div>
     {{#if profiles.length}}
       <div id='profilesBlock'>
